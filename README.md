@@ -5,6 +5,7 @@ The repository features different libraries/frameworks which solve the same prob
 ## Features
 
 * Vanilla JavaScript
+* ES6 JavaScript
 * React
 * Vue
 
