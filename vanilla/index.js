@@ -1,6 +1,6 @@
 var BASE_URL = 'https://hn.algolia.com/api/v1/';
 
-function getListFromApi(query) {
+function doSearch(query) {
   var url = BASE_URL + 'search?query=' + query + '&hitsPerPage=200';
   return fetch(url)
     .then(function (response) {
@@ -25,10 +25,6 @@ function onSearch() {
 
 function getValueFromElementById(id) {
   return document.getElementById(id).value;
-};
-
-function doSearch(query) {
-  return getListFromApi(query);
 };
 
 function removeList() {
