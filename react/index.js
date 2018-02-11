@@ -1,6 +1,6 @@
 const BASE_URL = 'https://hn.algolia.com/api/v1/';
 
-function getList(query) {
+function doSearch(query) {
   const url = `${BASE_URL}search?query=${query}&hitsPerPage=200`;
   return fetch(url)
     .then(response => response.json())
@@ -23,7 +23,7 @@ class App extends React.Component {
   onSubmit(e) {
     e.preventDefault();
 
-    getList(this.state.input)
+    doSearch(this.state.input)
       .then((hits) => this.setState({ list: hits }));
   }
 
