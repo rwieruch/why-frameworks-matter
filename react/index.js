@@ -13,7 +13,7 @@ class App extends React.Component {
 
     this.state = {
       input: '',
-      list: null,
+      list: [],
     };
 
     this.onChange = this.onChange.bind(this);
@@ -40,7 +40,7 @@ class App extends React.Component {
           <input type="text" onChange={this.onChange} value={input} />
           <button type="text">Search</button>
         </form>
-        {list && list.map(item => <div key={item.objectID}>{item.title}</div>)}
+        {list.map(item => <div key={item.objectID}>{item.title}</div>)}
       </div>
     );
   }
