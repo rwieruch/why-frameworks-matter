@@ -1,6 +1,6 @@
 const BASE_URL = 'https://hn.algolia.com/api/v1/';
 
-function getList(query) {
+function getListFromApi(query) {
   const url = `${BASE_URL}search?query=${query}&hitsPerPage=200`;
   return fetch(url)
     .then(response => response.json())
@@ -14,15 +14,15 @@ const addButtonEvent = () =>
 const onSearch = () => {
   removeList();
 
-  doSearch(getElementByIdValue('searchInput'))
+  doSearch(getValueFromElementById('searchInput'))
     .then(appendList);
 };
 
-const getElementByIdValue = id =>
+const getValueFromElementById = id =>
   document.getElementById(id).value;
 
 const doSearch = query =>
-  getList(query);
+  getListFromApi(query);
 
 const removeList = () => {
   const listNode = document.getElementById('list');
