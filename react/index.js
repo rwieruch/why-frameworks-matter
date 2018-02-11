@@ -23,10 +23,6 @@ class App extends React.Component {
   onSubmit(e) {
     e.preventDefault();
 
-    if (this.state.input == '') {
-      return;
-    }
-
     getList(this.state.input)
       .then((hits) => this.setState({ list: hits }));
   }
