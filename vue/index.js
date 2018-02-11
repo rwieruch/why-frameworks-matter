@@ -7,6 +7,11 @@ function doSearch(query) {
     .then(result => result.hits);
 }
 
+Vue.component('item', {
+  props: ['item'],
+  template: '<div>{{item.title}}</div>'
+});
+
 new Vue({
   el: '#app',
   template: `
@@ -16,9 +21,11 @@ new Vue({
         <input type="text" v-model="query"/>
         <button type="text">Search</button>
       </form>
-      <div v-for="item in list">
-        {{item.title}}
-      </div>
+      <item
+        v-for="item in list"
+        v-bind:item="item"
+        v-bind:key="item.objectID"
+      />
     </div>
   `,
   data: {

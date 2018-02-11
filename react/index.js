@@ -40,11 +40,14 @@ class App extends React.Component {
           <input type="text" onChange={this.onChange} value={input} />
           <button type="text">Search</button>
         </form>
-        {list.map(item => <div key={item.objectID}>{item.title}</div>)}
+        {list.map(item => <Item key={item.objectID} item={item} />)}
       </div>
     );
   }
 }
+
+const Item = ({ item }) =>
+  <div>{item.title}</div>
 
 ReactDOM.render(
   <App />,
