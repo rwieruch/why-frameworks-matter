@@ -12,6 +12,8 @@ Looking for contributions:
 
 * Angular
 * Ember
+* jQuery
+* Preact
 * Others
 
 ## Getting Started
