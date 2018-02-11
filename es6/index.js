@@ -46,4 +46,4 @@ const appendItem = listNode => item => {
   listNode.appendChild(itemNode);
 };
 
-(() => addButtonEvent())();
+addButtonEvent();

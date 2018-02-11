@@ -55,6 +55,4 @@ function appendItem(listNode) {
   };
 };
 
-(function () {
-  addButtonEvent();
-})();
+addButtonEvent();
