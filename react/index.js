@@ -40,7 +40,9 @@ class App extends React.Component {
           <input type="text" onChange={this.onChange} value={input} />
           <button type="text">Search</button>
         </form>
-        {list.map(item => <Item key={item.objectID} item={item} />)}
+        {list.map(item =>
+          <Item key={item.objectID} item={item} />
+        )}
       </div>
     );
   }
