@@ -1,6 +1,6 @@
 # Why Frameworks Matter
 
-The repository features different libraries/frameworks which solve the same problem: Search stories from [Hacker News](https://hn.algolia.com/api) and show the result in a list in a browser. It should showcase how the same thing can be achieved with different solutions. But most important it should show why we don't build large applications with vanilla JavaScript anymore. Read more about it: [Why Frameworks Matter](https://www.robinwieruch.de/why-frameworks-matter/)
+The repository features different libraries/frameworks which solve the same problem: Search stories from [Hacker News](https://hn.algolia.com/api) and show the result in a list in a browser. It should showcase how the same thing can be achieved with different solutions. But most important it should show why we don't build large applications with vanilla JavaScript anymore. Read more about it: **WIP** [Why Frameworks Matter](https://www.robinwieruch.de/why-frameworks-matter/)
 
 ## Features
 
