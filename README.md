@@ -8,10 +8,11 @@ The repository features different libraries/frameworks which solve the same prob
 * ES6 JavaScript
 * React
 * Vue
+* AngularJS 1.x
 
 Looking for contributions:
 
-* Angular
+* Angular 2+
 * Ember
 * jQuery
 * Preact
