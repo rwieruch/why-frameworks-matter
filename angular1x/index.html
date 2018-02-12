@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Angular 1.x</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div ng-app="app" ng-controller="searchController">
+        <h1>Search Hacker News with AngularJS 1.x</h1>
+        <input id="searchInput" ng-model="searchTerm" />
+        <button id="searchButton" ng-click="searchApi() ">Search</button>
+        <div ng-repeat="post in posts">
+            <p>{{ post.title }}</p>
+        </div>
+    </div>
+</body>
+
+</html>
