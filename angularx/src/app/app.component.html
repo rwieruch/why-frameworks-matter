@@ -1,0 +1,8 @@
+<div>
+  <h1>Search Hacker News with Angular X</h1>
+  <form (ngSubmit)="doSearch()">
+    <input type="text" [(ngModel)]="query" name="query" id="query"/>
+    <button type="submit">Search</button>
+  </form>
+  <app-item *ngFor="let item of list" [item]="item"></app-item>
+</div>
