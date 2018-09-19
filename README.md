@@ -9,10 +9,10 @@ The repository features different libraries/frameworks which solve the same prob
 * React
 * Vue
 * AngularJS 1.x
+* Angular 2+
 
 Looking for contributions:
 
-* Angular 2+
 * Ember
 * jQuery
 * Preact
