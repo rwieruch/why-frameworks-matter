@@ -1,5 +1,7 @@
 # Why Frameworks Matter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rwieruch/why-frameworks-matter.svg)](https://greenkeeper.io/)
+
 The repository features different libraries/frameworks which solve the same problem: Search stories from [Hacker News](https://hn.algolia.com/api) and show the result in a list in a browser. It should showcase how the same thing can be achieved with different solutions. But most important it should show why don't large applications aren't build with vanilla JavaScript anymore. Read more about it: [Why Frameworks Matter](https://www.robinwieruch.de/why-frameworks-matter/).
 
 ## Features
