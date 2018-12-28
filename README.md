@@ -5,6 +5,7 @@ The repository features different libraries/frameworks which solve the same prob
 ## Features
 
 * Vanilla JavaScript
+* jQuery
 * ES6 JavaScript
 * React
 * Vue
@@ -14,7 +15,6 @@ The repository features different libraries/frameworks which solve the same prob
 Looking for contributions:
 
 * Ember
-* jQuery
 * Preact
 * Others
 
