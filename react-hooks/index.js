@@ -7,37 +7,26 @@ function doSearch(query) {
     .then(result => result.hits);
 }
 
-class App extends React.Component {
-  constructor() {
-    super();
+const App = () => {
+  const [input, setInput] = React.useState('');
+  const [list, setList] = React.useState([]);
 
-    this.state = {
-      input: '',
-      list: [],
-    };
-
-    this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-  }
-
-  onSubmit(e) {
+  const onSubmit = (e) => {
     e.preventDefault();
 
-    doSearch(this.state.input)
-      .then((hits) => this.setState({ list: hits }));
+    doSearch(input)
+      .then((hits) => setList(hits));
   }
 
-  onChange(e) {
-    this.setState({ input: e.target.value });
+  const onChange = (e)  => {
+    setInput(e.target.value);
   }
 
-  render() {
-    const { input, list } = this.state;
     return (
       <div>
         <h1>Search Hacker News with React</h1>
-        <form type="submit" onSubmit={this.onSubmit}>
-          <input type="text" onChange={this.onChange} value={input} />
+        <form type="submit" onSubmit={onSubmit}>
+          <input type="text" onChange={onChange} value={input} />
           <button type="text">Search</button>
         </form>
         {list.map(item =>
@@ -45,7 +34,6 @@ class App extends React.Component {
         )}
       </div>
     );
-  }
 }
 
 const Item = ({ item }) =>
