@@ -11,6 +11,7 @@ The repository features different libraries/frameworks which solve the same prob
 * Vue
 * AngularJS 1.x
 * Angular 2+
+* NextJs
 
 Looking for contributions:
 
