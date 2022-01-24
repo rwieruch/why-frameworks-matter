@@ -8,6 +8,7 @@ The repository features different libraries/frameworks which solve the same prob
 * jQuery
 * ES6 JavaScript
 * React
+* React (with hooks)
 * Vue
 * AngularJS 1.x
 * Angular 2+
